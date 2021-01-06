@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="html">
+		<meta name="description" content="html with css">
+		<meta name="author" content="Santosh Mhatre">
 		<title>Mark 3 File</title>
+		<style>
+			body
+			{
+				background-color:#D3F6F1;
+			}
+			.box
+			{
+				border:1px;
+				border-color:#ABADAC;
+				border-style:solid;
+				border-radius:10px;
+				padding-top:0px;
+			}
+			.box-title
+			{
+				background-color:#C8E7E2;
+				font-size:10px;
+				padding-top:0px;
+				margin:0px;
+				border-radius:10px;
+			}
+			.box-content
+			{
+				padding-left:14px;
+			}
+			.box-title-text
+			{
+				margin:0px;
+				padding:5px;
+				border-radius:10px;
+			}
+		</style>
 	</head>
 	<body>
-		<div>
-			<div>
-				<h1>HTML</h1>
+		<div class="box">
+			<div class="box-title">
+				<h1 class="box-title-text">HTML</h1>
 			</div>
-			<div>
+			<div class="box-content">
 				<p>HTML is mark up language for browser</p>
 			</div>
 		</div>
-		<div>
-			<div>
+		<div class="box">
+			<div class="box-title">
 				<h1>CSS</h1>
 			</div>
-			<div>
+			<div class="box-content">
 				<p>CSS Stands for Cascaded Style Sheets</p>
 			</div>
 		</div>
-		<div>
-			<div>
+		<div class="box">
+			<div class="box-title">
 				<h1>JavaScript</h1>
 			</div>
-			<div>
+			<div class="box-content">
 				<p>JavaScript is scripting language which is understood by Browser directly</p>
 			</div>
 		</div>
-		<form action="www.google.com" method="post">
-			<div>
-				<span>
-					<label>User id:</label>
-				</span>
-				<span>
-					<input name="userid">
-				</span>
-			</div>
-			<div>
-				<span>
-					<label>password:</label>
-				</span>
-				<span>
-					<input type="password" name="password">
-				</span>
-			</div>
-			<div>
-				<button type="submit">Login</button>
-			</div>
-		</form>
+		<div class="login">
+			<form action="www.google.com" method="post">
+				<div class="userid">
+					<span class="userid-label">
+						<label>User id:</label>
+					</span>
+					<span class="userid-input">
+						<input name="userid">
+					</span>
+				</div>
+				<div class="pwd">
+					<span class="pwd-label">
+						<label>password:</label>
+					</span>
+					<span class="pwd-input">
+						<input type="password" name="password">
+					</span>
+				</div>
+				<div class="Login">
+					<button type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+		
 		<div>
 			<table>
 				<thead>
